@@ -1,0 +1,61 @@
+.container {
+  height: calc(100vh - 48px);
+  width: 100%;
+  background: var(--bg-canvas);
+}
+
+.empty {
+  height: calc(100vh - 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-canvas);
+  color: var(--text-secondary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+}
+
+.addNoteBtn {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 40px;
+  padding: 0 var(--space-5) 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-h2);
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.addNoteBtn:hover {
+  transform: translateX(-50%) scale(1.04);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-lg);
+}
+
+.addNoteBtn:active {
+  transform: translateX(-50%) scale(0.97);
+}
+
+.addNoteIcon {
+  color: var(--text-secondary);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.addNoteBtn:hover .addNoteIcon {
+  color: var(--text-primary);
+}

@@ -1,0 +1,50 @@
+.node {
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  width: 240px;
+  font-family: var(--font-ui);
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
+}
+
+.node:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  border-style: solid;
+  box-shadow: var(--shadow-focus);
+}
+
+.format {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+.prompt {
+  font-size: var(--fs-body);
+  color: var(--text-primary);
+  line-height: var(--lh-normal);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-4);
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-pill);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
